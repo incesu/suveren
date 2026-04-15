@@ -198,7 +198,7 @@ nav{display:flex;align-items:center;gap:2px;}
           <div class="dropdown-menu-inner">
             <a href="mobilya.html" class="current">Mobilya Grubu</a>
             <a href="tup.html">Tüp Malzemeleri</a>
-            <a href="mssz.html">Masa Sandalye Sehpa</a>
+            <a href="masa.html">Masa Sandalye Sehpa</a>
             <a href="endustriyel.html">Endüstriyel Ürünler</a>
             <a href="kea.html">Küçük Ev Aletleri</a>
             <a href="diger.html">Diğer Ürünler</a>
@@ -221,7 +221,7 @@ nav{display:flex;align-items:center;gap:2px;}
       <div class="mob-dd-menu" id="mobDdMenu">
         <a href="mobilya.html">Mobilya Grubu</a>
         <a href="tup.html">Tüp Malzemeleri</a>
-        <a href="mssz.html">Masa Sandalye Sehpa</a>
+        <a href="masa.html">Masa Sandalye Sehpa</a>
         <a href="endustriyel.html">Endüstriyel Ürünler</a>
         <a href="kea.html">Küçük Ev Aletleri</a>
         <a href="diger.html">Diğer Ürünler</a>
@@ -379,7 +379,7 @@ function fiyatText(u){
 let allProducts = [];
 
 function initProducts(){
-  if(teof URUNLER === 'undefined'){
+  if(typeof URUNLER === 'undefined'){
     document.getElementById('productGrid').innerHTML = '<div class="no-result">⚠️ urunler.js dosyası bulunamadı.</div>';
     document.getElementById('itemCount').textContent = '0 ürün';
     return;
